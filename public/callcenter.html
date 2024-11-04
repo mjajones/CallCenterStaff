@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service - Order Entry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class=""header-banner">
+        <img src="Header.jpg" alt="Header Image">
+    </div>
+    <div class="container">
+        <h1>Customer Service - Order Entry</h1>
+        <div class="left-section">
+            <div class="search-section">
+                <label for="customer-search">Search for Customer (Name or Phone):</label>
+                <input type="text" id="customer-search" placeholder="Enter customer name or phone">
+                <button id="customer-search-btn">Search Customer</button>
+                <div id="customer-results"></div>
+            </div>
+
+            <div class="search-section">
+                <label for="product-search">Search for Product:</label>
+                <input type="text" id="product-search" placeholder="Enter product name">
+                <button id="product-search-btn">Search Product</button>
+                <div id="product-results"></div>
+            </div>
+
+            <div class="payment-section">
+                <label for="payment-method">Select Payment Method:</label>
+                <select id="payment-method">
+                    <option value="">Click here to select payment method</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="contract">Contract Customer (Billed)</option>
+                </select>
+            </div>
+
+            <div id="card-info" style="display:none;" class="card-info">
+                <h3>Card Information</h3>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" placeholder="Enter card number">
+                <label for="card-expiry">Expiration Date:</label>
+                <input type="text" id="card-expiry" placeholder="MM/YY">
+                <label for="card-cvv">Security Code:</label>
+                <input type="text" id="card-cvv" placeholder="CVV">
+            </div>
+
+            <button id="place-order-btn" class="place-order-btn">Place Order</button>
+        </div>
+
+        <div class="right-section">
+            <div id="selected-customer" class="selected-section">
+                <h2>Selected Customer:</h2>
+                <div class="selected-info">
+                    <p id="selected-customer-info" onclick="removeCustomer()">None (Click to remove)</p>
+                </div>
+            </div>
+
+            <div id="selected-products" class="selected-section">
+                <h2>Selected Products:</h2>
+                <ul id="selected-products-list" class="selected-info"></ul>
+            </div>
+
+            <div class="order-total">
+                <p>Total: $<span id="total-price">0.00</span></p>
+                <p>Total with 7% Tax: $<span id="total-with-tax">0.00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

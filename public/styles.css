@@ -1,0 +1,99 @@
+/* Logo */
+
+.header-banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Styling for the Order Entry page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-section, .right-section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left-section {
+    width: 60%;
+}
+
+.right-section {
+    width: 35%;
+    margin-left: 5%;
+}
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+.selected-section {
+    margin-bottom: 20px;
+}
+
+.selected-products-list {
+    list-style-type: none;
+}
+
+.order-total {
+    margin-top: 20px;
+}
+
+.payment-section, .card-info {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.place-order-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.selected-info {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
